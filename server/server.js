@@ -13,7 +13,7 @@ app.use(methodOverride('_method'));
 app.use(cookieParser());
 
 // routes
-app.use(express.static('./public'));
+app.use(express.static('../client/public'));
 
 // start express server
 if(!module.parent) {
