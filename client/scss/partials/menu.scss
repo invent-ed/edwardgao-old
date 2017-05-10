@@ -1,0 +1,11 @@
+#menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.menu-entry {
+	margin: 0.5rem;
+	margin-left: 0rem;
+	margin-right: 2rem;
+}
