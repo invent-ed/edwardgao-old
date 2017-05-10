@@ -1,20 +1,26 @@
 #category-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
 	margin-top: 2rem;
 }
 
 .category {
-	border: 3px solid $neon-green;
-	margin-bottom: 1rem;
-	padding: 1rem;
+	margin-bottom: 4rem;
+	width: 80%;
 }
 
 .cat-title {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	padding: 0.5rem;
+	border: 3px solid $accent;
+	background-color: $accent;
+	color: white;
 }
 
 .cat-content {
-	border: 3px solid $neon-green;
+	border: 3px solid white;
 	padding: 1rem;
 	height: 10rem;
 }

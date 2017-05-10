@@ -11,13 +11,12 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Open Sans', sans-serif; }
 
 body {
-  padding: 2rem;
-  background-color: black;
-  color: white; }
+  padding: 4rem;
+  background-color: #edebe3; }
 
 a {
   color: inherit;
@@ -25,11 +24,11 @@ a {
   text-decoration: none; }
 
 #header {
-  color: #d4fd02;
-  border: 0px solid #d4fd02;
+  color: #163c6e;
+  border: 0px solid #163c6e;
   border-bottom-width: 3px;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  font-weight: bold; }
 
 #title {
   font-size: 3rem; }
@@ -37,26 +36,32 @@ a {
 #menu {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem; }
 
 .menu-entry {
-  margin: 0.5rem;
-  margin-left: 0rem;
-  margin-right: 2rem; }
+  padding-right: 2rem; }
 
 #category-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   margin-top: 2rem; }
 
 .category {
-  border: 3px solid #d4fd02;
-  margin-bottom: 1rem;
-  padding: 1rem; }
+  margin-bottom: 4rem;
+  width: 80%; }
 
 .cat-title {
-  font-size: 2rem;
-  margin-bottom: 1rem; }
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 3px solid #163c6e;
+  background-color: #163c6e;
+  color: white; }
 
 .cat-content {
-  border: 3px solid #d4fd02;
+  border: 3px solid white;
   padding: 1rem;
   height: 10rem; }
