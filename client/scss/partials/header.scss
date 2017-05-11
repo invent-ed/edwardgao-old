@@ -21,8 +21,7 @@
 	background-color: $accent-dark;
 	& a {
 		margin-right: 1rem;
-		& p {
-			cursor: pointer;
-		}
+		cursor: pointer;
+		font-size: 0.8rem;
 	}
 }

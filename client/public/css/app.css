@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
-* {
+*:not(ul, li) {
   top: 0;
   left: 0;
   bottom: 0;
@@ -45,17 +45,17 @@ a {
   padding: 0.5rem;
   background-color: #2a3342; }
   #contact-info a {
-    margin-right: 1rem; }
-    #contact-info a p {
-      cursor: pointer; }
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem; }
 
 #menu {
   margin-top: 0.5rem;
   position: absolute;
-  width: calc(20% - 4rem);
+  width: 10rem;
   height: 10.5rem;
   top: 13rem;
-  left: 80%; }
+  right: 3rem; }
 
 .menu-entry {
   font-size: 1.2rem;
@@ -73,7 +73,7 @@ a {
 
 .category {
   margin-bottom: 2rem;
-  width: 80%; }
+  width: calc(100% - 11rem); }
 
 .cat-title {
   color: #2a3342;
@@ -85,9 +85,20 @@ a {
   border-left-width: 2.5rem; }
 
 .cat-content {
-  padding: 1rem;
-  height: 10rem;
-  background-color: white; }
+  padding: 1.5rem;
+  background-color: white;
+  margin-bottom: 1rem; }
+  .cat-content h3 {
+    margin: 0px;
+    font-size: 1.3rem;
+    line-height: 1.3rem; }
+  .cat-content a {
+    color: blue;
+    font-size: 0.6rem; }
 
 p {
+  font-size: 0.8rem; }
+
+ul {
+  margin: 0;
   font-size: 0.8rem; }
