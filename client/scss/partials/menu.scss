@@ -1,11 +1,17 @@
 #menu {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
 	margin-top: 0.5rem;
-	padding-left: 0.5rem;
+	position: absolute;
+	width: calc(20% - 4rem);
+	height: 10.5rem;
+	top: 13rem;
+	left: 80%;
 }
 
 .menu-entry {
-	padding-right: 2rem;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	background-color: white;
+	border: 0px solid black;
+	border-bottom-width: 1px;
 }
