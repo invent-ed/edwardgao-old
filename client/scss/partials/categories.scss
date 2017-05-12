@@ -3,6 +3,9 @@
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	margin-top: 2rem;
+	@media only print {
+		margin-top: 0rem;
+	}
 	@include respond-to(small) {
 		margin-top: 1rem;
 	}
@@ -13,6 +16,7 @@
 	width: calc(100% - 11rem);
 	@media only print {
 		width: 100%;
+		margin-bottom: 0rem;
 	}
 	@include respond-to(small) {
 		width: 100%;
@@ -27,6 +31,10 @@
 	margin-bottom: 1rem;
 	padding: 0.2rem;
 	padding-left: 0rem;
+	@media only print {
+		border: 0px solid black;
+		border-bottom-width: 1px;
+	}
 	@include respond-to(small) {
 		margin-top: 0rem;
 	}

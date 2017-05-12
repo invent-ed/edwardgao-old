@@ -4,7 +4,7 @@
 	width: 10rem;
 	height: 10.5rem;
 	top: 17.5rem;
-	right: 3rem;
+	right: 4rem;
 	@media only print {
 		display: none;
 	}
@@ -15,8 +15,8 @@
 
 .static-menu {
 	position: fixed !important;
-	top: 4rem !important;
-	right: 3.5rem !important;
+	top: calc(4.5rem - 2px) !important;
+	right: calc(4.5rem - 1px)!important;
 }
 
 .menu-entry {
@@ -25,9 +25,10 @@
 	padding-left: 0.5rem;
 	background-color: white;
 	cursor: pointer;
+	border: 0px solid white;
+	border-bottom-width: 1px;
 	&:hover {
 		background-color: yellow;
-		border: 0px solid black;
-		border-bottom-width: 1px;
+		border-color: black;
 	}
 }

@@ -11,17 +11,24 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif; }
+  font-size: 20px;
+  font-family: 'Open Sans', Verdana, sans-serif; }
+  @media only print {
+    html {
+      font-size: 20px; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     html {
       font-size: 15px; } }
 
 body {
   padding: 4rem;
+  padding-right: 5rem;
   padding-bottom: 2rem;
   position: relative;
   background-color: #eeeeee; }
+  @media only print {
+    body {
+      background-color: white; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     body {
       padding: 1rem;
@@ -51,6 +58,12 @@ a {
     margin-right: 1rem;
     cursor: pointer;
     font-size: 0.8rem !important; }
+  @media only print {
+    #contact-info {
+      background-color: white;
+      display: block; }
+      #contact-info a {
+        display: block; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     #contact-info {
       display: block; }
@@ -63,7 +76,7 @@ a {
   width: 10rem;
   height: 10.5rem;
   top: 17.5rem;
-  right: 3rem; }
+  right: 4rem; }
   @media only print {
     #menu {
       display: none; } }
@@ -73,25 +86,29 @@ a {
 
 .static-menu {
   position: fixed !important;
-  top: 4rem !important;
-  right: 3.5rem !important; }
+  top: calc(4.5rem - 2px) !important;
+  right: calc(4.5rem - 1px) !important; }
 
 .menu-entry {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   padding-left: 0.5rem;
   background-color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0px solid white;
+  border-bottom-width: 1px; }
   .menu-entry:hover {
     background-color: yellow;
-    border: 0px solid black;
-    border-bottom-width: 1px; }
+    border-color: black; }
 
 #category-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   margin-top: 2rem; }
+  @media only print {
+    #category-container {
+      margin-top: 0rem; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     #category-container {
       margin-top: 1rem; } }
@@ -101,7 +118,8 @@ a {
   width: calc(100% - 11rem); }
   @media only print {
     .category {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 0rem; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     .category {
       width: 100%;
@@ -114,6 +132,10 @@ a {
   margin-bottom: 1rem;
   padding: 0.2rem;
   padding-left: 0rem; }
+  @media only print {
+    .cat-title {
+      border: 0px solid black;
+      border-bottom-width: 1px; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     .cat-title {
       margin-top: 0rem; } }
@@ -129,9 +151,14 @@ a {
   .cat-content a {
     color: blue;
     font-size: 0.6rem; }
+  @media only print {
+    .cat-content {
+      padding: 0rem; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     .cat-content {
-      padding: 1rem; } }
+      padding: 1rem; }
+      .cat-content a {
+        font-size: 0.8rem; } }
 
 p {
   font-size: 0.8rem; }
@@ -144,4 +171,4 @@ ul {
   font-size: 0.8rem; }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     ul {
-      padding: 1rem; } }
+      padding-left: 1.2rem; } }

@@ -11,8 +11,14 @@
 		color: blue;
 		font-size: 0.6rem;
 	}
+	@media only print {
+		padding: 0rem;
+	}
 	@include respond-to(small) {
 		padding: 1rem;
+		a {
+			font-size: 0.8rem;
+		}
 	}
 }
 
@@ -27,6 +33,6 @@ ul {
 	margin: 0;
 	font-size: 0.8rem;
 	@include respond-to(small) {
-		padding: 1rem;
+		padding-left: 1.2rem;
 	}
 }

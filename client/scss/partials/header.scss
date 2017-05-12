@@ -20,6 +20,13 @@
 		cursor: pointer;
 		font-size: 0.8rem !important;
 	}
+	@media only print {
+		background-color: white;
+		display: block;
+		& a {
+			display: block;
+		}
+	}
 	@include respond-to(small) {
 		display: block;
 		& a {

@@ -9,6 +9,6 @@
 		let educationTop = education.getBoundingClientRect().top;
 		let experienceTop = experience.getBoundingClientRect().top;
 		let skillsTop = skills.getBoundingClientRect().top;
-		menu.className = (projectsTop < 0) ? "static-menu" : "";
+		menu.className = (projectsTop < 1) ? "static-menu" : "";
 	}
 })();
