@@ -16,27 +16,20 @@ html {
   @media only print {
     html {
       font-size: 20px; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     html {
       font-size: 15px; } }
-  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 964px) {
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
     html {
       font-size: 20px; } }
 
 body {
-  padding: 4rem;
-  padding-right: 5rem;
-  padding-bottom: 2rem;
+  margin: 0;
   position: relative;
   background-color: #eeeeee; }
   @media only print {
     body {
-      padding: 4rem;
       background-color: white; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
-    body {
-      padding: 1rem;
-      padding-bottom: 0rem; } }
 
 a {
   color: inherit;
@@ -44,11 +37,26 @@ a {
   text-decoration: none; }
 
 #header {
-  color: #2a3342;
-  padding-bottom: 1rem; }
+  background-color: #02779e;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  width: 100%; }
+  @media only print {
+    #header {
+      padding-top: 2rem;
+      padding-bottom: 0rem;
+      background-color: white; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    #header {
+      padding-left: 1rem; } }
 
 #title {
+  color: white;
   font-size: 3rem; }
+  @media only print {
+    #title {
+      color: black; } }
 
 #contact-info {
   color: black;
@@ -57,41 +65,47 @@ a {
   flex-flow: row wrap;
   justify-content: flex-start;
   padding: 0.5rem;
+  padding-left: 2rem;
   background-color: #dddddd; }
   #contact-info a {
     margin-right: 1rem;
     cursor: pointer;
-    font-size: 0.8rem !important; }
+    font-size: 0.8rem; }
+    @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+      #contact-info a {
+        font-size: 0.8rem !important; } }
+    @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+      #contact-info a {
+        font-size: 1rem;
+        margin-right: 1rem; } }
+  #contact-info a:hover {
+    background-color: yellow; }
   @media only print {
     #contact-info {
-      background-color: white;
-      display: block; }
-      #contact-info a {
-        display: block; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+      background-color: white; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     #contact-info {
-      display: block; }
-      #contact-info a {
-        font-size: 1rem !important; } }
+      padding-left: 1rem;
+      margin-right: 0rem !important;
+      display: block; } }
 
 #menu {
   margin-top: 0.5rem;
   position: absolute;
   width: 10rem;
   height: 10.5rem;
-  top: 17.5rem;
-  left: calc(100% - 14rem); }
+  top: 12rem;
+  left: calc(100% - 12rem); }
   @media only print {
     #menu {
       display: none; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     #menu {
       display: none; } }
 
 .static-menu {
   position: fixed !important;
-  top: calc(4.5rem - 2px) !important;
-  right: calc(4.5rem - 1px) !important; }
+  top: 1rem !important; }
 
 .menu-entry {
   font-size: 1rem;
@@ -109,58 +123,54 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-top: 2rem; }
+  padding: 2rem;
+  padding-top: 0rem; }
   @media only print {
     #category-container {
       margin-top: 0rem; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     #category-container {
-      margin-top: 1rem; } }
+      padding: 1rem;
+      padding-top: 0rem; } }
 
 .category {
-  margin-bottom: 1rem;
   width: calc(100% - 11rem); }
   @media only print {
     .category {
       width: 100%;
       margin-bottom: 0rem; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     .category {
       width: 100%;
       margin-bottom: 0rem; } }
 
 .cat-title {
-  color: #2a3342;
   font-size: 1.8rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   padding: 0.2rem;
   padding-left: 0rem; }
   @media only print {
     .cat-title {
       border: 0px solid black;
       border-bottom-width: 1px; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
-    .cat-title {
-      margin-top: 0rem; } }
 
 .cat-content {
   padding: 1.5rem;
   background-color: white;
-  margin-bottom: 1rem; }
+  margin-top: 1rem; }
   .cat-content .card-title {
     margin: 0px;
     font-size: 1.3rem;
     line-height: 1.3rem; }
   .cat-content a {
-    color: blue;
+    color: #02779e;
     font-size: 0.6rem; }
   @media only print {
     .cat-content {
       padding: 0rem; }
       .cat-content a {
         font-size: 0.8rem; } }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     .cat-content {
       padding: 1rem; }
       .cat-content a {
@@ -168,13 +178,13 @@ a {
 
 p {
   font-size: 0.8rem; }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     p {
       margin-top: 0.5rem; } }
 
 ul {
   margin: 0;
   font-size: 0.8rem; }
-  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     ul {
       padding-left: 1.2rem; } }

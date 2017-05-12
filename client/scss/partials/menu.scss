@@ -3,8 +3,8 @@
 	position: absolute;
 	width: 10rem;
 	height: 10.5rem;
-	top: 17.5rem;
-	left: calc(100% - 14rem);
+	top: 12rem;
+	left: calc(100% - 12rem);
 	@include respond-to(print) {
 		display: none;
 	}
@@ -15,15 +15,14 @@
 
 .static-menu {
 	position: fixed !important;
-	top: calc(4.5rem - 2px) !important;
-	right: calc(4.5rem - 1px)!important;
+	top: 1rem !important;
 }
 
 .menu-entry {
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
 	padding-left: 0.5rem;
-	background-color: white;
+	background-color: $accent-light;
 	cursor: pointer;
 	border: 0px solid white;
 	border-bottom-width: 1px;

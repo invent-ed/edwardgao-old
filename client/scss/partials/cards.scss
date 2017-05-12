@@ -1,14 +1,14 @@
 .cat-content {
 	padding: 1.5rem;
-	background-color: white;
-	margin-bottom: 1rem;
+	background-color: $accent-light;
+	margin-top: 1rem;
 	.card-title {
 		margin: 0px;
 		font-size: 1.3rem;
 		line-height: 1.3rem;
 	}
 	a {
-		color: blue;
+		color: #02779e;
 		font-size: 0.6rem;
 	}
 	@include respond-to(print) {

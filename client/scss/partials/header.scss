@@ -1,10 +1,25 @@
 #header {
-	color: $accent-dark;
+	background-color: #02779e;
+	padding-top: 4rem;
+	padding-left: 2rem;
 	padding-bottom: 1rem;
+	width: 100%;
+	@include respond-to(print) {
+		padding-top: 2rem;
+		padding-bottom: 0rem;
+		background-color: white;
+	}
+	@include respond-to(small) {
+		padding-left: 1rem;
+	}
 }
 
 #title {
+	color: white;
 	font-size: 3rem;
+	@include respond-to(print) {
+		color: black;
+	}
 }
 
 #contact-info {
@@ -14,23 +29,29 @@
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	padding: 0.5rem;
-	background-color: $accent-light;
+	padding-left: 2rem;
+	background-color: $accent-dark;
 	& a {
 		margin-right: 1rem;
 		cursor: pointer;
-		font-size: 0.8rem !important;
+		font-size: 0.8rem;
+		@include respond-to(medium) {
+			font-size: 0.8rem !important;
+		}
+		@include respond-to(small) {
+			font-size: 1rem;
+			margin-right: 1rem;
+		}
+	}
+	& a:hover {
+		background-color: yellow;
 	}
 	@include respond-to(print) {
 		background-color: white;
-		display: block;
-		& a {
-			display: block;
-		}
 	}
 	@include respond-to(small) {
+		padding-left: 1rem;
+		margin-right: 0rem !important;
 		display: block;
-		& a {
-			font-size: 1rem !important;
-		}
 	}
 }

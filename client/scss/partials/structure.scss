@@ -24,18 +24,11 @@ html {
 }
 
 body {
-	padding: 4rem;
-	padding-right: 5rem;
-	padding-bottom: 2rem;
+	margin: 0;
 	position: relative;
-	background-color: $bkgd;
+	background-color: $accent;
 	@include respond-to(print) {
-		padding: 4rem;
 		background-color: white;
-	}
-	@include respond-to(small) {
-		padding: 1rem;
-		padding-bottom: 0rem;
 	}
 }
 

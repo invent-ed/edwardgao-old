@@ -2,17 +2,18 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	margin-top: 2rem;
+	padding: 2rem;
+	padding-top: 0rem;
 	@include respond-to(print) {
 		margin-top: 0rem;
 	}
 	@include respond-to(small) {
-		margin-top: 1rem;
+		padding: 1rem;
+		padding-top: 0rem;
 	}
 }
 
 .category {
-	margin-bottom: 1rem;
 	width: calc(100% - 11rem);
 	@include respond-to(print) {
 		width: 100%;
@@ -25,17 +26,12 @@
 }
 
 .cat-title {
-	color: $accent-dark;
 	font-size: 1.8rem;
 	margin-top: 1rem;
-	margin-bottom: 1rem;
 	padding: 0.2rem;
 	padding-left: 0rem;
 	@include respond-to(print) {
 		border: 0px solid black;
 		border-bottom-width: 1px;
-	}
-	@include respond-to(small) {
-		margin-top: 0rem;
 	}
 }
