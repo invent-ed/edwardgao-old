@@ -2,7 +2,7 @@
 	padding: 1.5rem;
 	background-color: white;
 	margin-bottom: 1rem;
-	h3 {
+	.card-title {
 		margin: 0px;
 		font-size: 1.3rem;
 		line-height: 1.3rem;
@@ -11,13 +11,22 @@
 		color: blue;
 		font-size: 0.6rem;
 	}
+	@include respond-to(small) {
+		padding: 1rem;
+	}
 }
 
 p {
 	font-size: 0.8rem;
+	@include respond-to(small) {
+		margin-top: 0.5rem;
+	}
 }
 
 ul {
 	margin: 0;
 	font-size: 0.8rem;
+	@include respond-to(small) {
+		padding: 1rem;
+	}
 }

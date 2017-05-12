@@ -8,6 +8,9 @@
 	@media only print {
 		display: none;
 	}
+	@include respond-to(small) {
+		display: none;
+	}
 }
 
 .static-menu {

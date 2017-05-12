@@ -13,12 +13,19 @@
 html {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    html {
+      font-size: 15px; } }
 
 body {
   padding: 4rem;
   padding-bottom: 2rem;
   position: relative;
   background-color: #eeeeee; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    body {
+      padding: 1rem;
+      padding-bottom: 0rem; } }
 
 a {
   color: inherit;
@@ -43,7 +50,12 @@ a {
   #contact-info a {
     margin-right: 1rem;
     cursor: pointer;
-    font-size: 0.8rem; }
+    font-size: 0.8rem !important; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    #contact-info {
+      display: block; }
+      #contact-info a {
+        font-size: 1rem !important; } }
 
 #menu {
   margin-top: 0.5rem;
@@ -53,6 +65,9 @@ a {
   top: 17.5rem;
   right: 3rem; }
   @media only print {
+    #menu {
+      display: none; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     #menu {
       display: none; } }
 
@@ -77,6 +92,9 @@ a {
   flex-flow: row wrap;
   justify-content: flex-start;
   margin-top: 2rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    #category-container {
+      margin-top: 1rem; } }
 
 .category {
   margin-bottom: 1rem;
@@ -84,6 +102,10 @@ a {
   @media only print {
     .category {
       width: 100%; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    .category {
+      width: 100%;
+      margin-bottom: 0rem; } }
 
 .cat-title {
   color: #2a3342;
@@ -92,22 +114,34 @@ a {
   margin-bottom: 1rem;
   padding: 0.2rem;
   padding-left: 0rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    .cat-title {
+      margin-top: 0rem; } }
 
 .cat-content {
   padding: 1.5rem;
   background-color: white;
   margin-bottom: 1rem; }
-  .cat-content h3 {
+  .cat-content .card-title {
     margin: 0px;
     font-size: 1.3rem;
     line-height: 1.3rem; }
   .cat-content a {
     color: blue;
     font-size: 0.6rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    .cat-content {
+      padding: 1rem; } }
 
 p {
   font-size: 0.8rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    p {
+      margin-top: 0.5rem; } }
 
 ul {
   margin: 0;
   font-size: 0.8rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
+    ul {
+      padding: 1rem; } }
