@@ -36,6 +36,10 @@ a {
   cursor: pointer;
   text-decoration: none; }
 
+@media only print {
+  .card-title, a, li, p {
+    page-break-inside: avoid; } }
+
 #header {
   background-color: #02779e;
   padding-top: 4rem;
@@ -165,6 +169,8 @@ a {
   .cat-content a {
     color: #02779e;
     font-size: 0.6rem; }
+    .cat-content a:hover {
+      background-color: yellow; }
   @media only print {
     .cat-content {
       padding: 0rem; }

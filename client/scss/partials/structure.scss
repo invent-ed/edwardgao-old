@@ -37,3 +37,9 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 }
+
+@include respond-to(print) {
+	.card-title, a, li, p {
+		page-break-inside: avoid;
+	}
+}
