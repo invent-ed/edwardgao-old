@@ -11,6 +11,7 @@
   box-sizing: border-box; }
 
 html {
+  overflow-x: hidden;
   font-size: 25px;
   font-family: 'Open Sans', Verdana, sans-serif; }
   @media only print {
@@ -53,7 +54,11 @@ a {
       background-color: white; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     #header {
+      padding-top: 1rem;
       padding-left: 1rem; } }
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+    #header {
+      padding-top: 4rem; } }
 
 #title {
   color: white;
