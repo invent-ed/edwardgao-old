@@ -3,15 +3,28 @@
 	position: absolute;
 	width: 10rem;
 	height: 10.5rem;
-	top: 13rem;
+	top: 17.5rem;
 	right: 3rem;
+	@media only print {
+		display: none;
+	}
+}
+
+.static-menu {
+	position: fixed !important;
+	top: 4rem !important;
+	right: 3.5rem !important;
 }
 
 .menu-entry {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin-bottom: 0.5rem;
 	padding-left: 0.5rem;
 	background-color: white;
-	border: 0px solid black;
-	border-bottom-width: 1px;
+	cursor: pointer;
+	&:hover {
+		background-color: yellow;
+		border: 0px solid black;
+		border-bottom-width: 1px;
+	}
 }

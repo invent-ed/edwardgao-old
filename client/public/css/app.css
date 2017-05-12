@@ -18,7 +18,7 @@ body {
   padding: 4rem;
   padding-bottom: 2rem;
   position: relative;
-  background-color: #e0e0e0; }
+  background-color: #eeeeee; }
 
 a {
   color: inherit;
@@ -27,23 +27,19 @@ a {
 
 #header {
   color: #2a3342;
-  /*
-	border: 0px solid $accent;
-	border-bottom-width: 3px;
-	*/
   padding-bottom: 1rem; }
 
 #title {
   font-size: 3rem; }
 
 #contact-info {
-  color: white;
+  color: black;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   padding: 0.5rem;
-  background-color: #2a3342; }
+  background-color: #dddddd; }
   #contact-info a {
     margin-right: 1rem;
     cursor: pointer;
@@ -54,16 +50,27 @@ a {
   position: absolute;
   width: 10rem;
   height: 10.5rem;
-  top: 13rem;
+  top: 17.5rem;
   right: 3rem; }
+  @media only print {
+    #menu {
+      display: none; } }
+
+.static-menu {
+  position: fixed !important;
+  top: 4rem !important;
+  right: 3.5rem !important; }
 
 .menu-entry {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   padding-left: 0.5rem;
   background-color: white;
-  border: 0px solid black;
-  border-bottom-width: 1px; }
+  cursor: pointer; }
+  .menu-entry:hover {
+    background-color: yellow;
+    border: 0px solid black;
+    border-bottom-width: 1px; }
 
 #category-container {
   display: flex;
@@ -72,17 +79,19 @@ a {
   margin-top: 2rem; }
 
 .category {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: calc(100% - 11rem); }
+  @media only print {
+    .category {
+      width: 100%; } }
 
 .cat-title {
   color: #2a3342;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.2rem;
-  padding-left: 1rem;
-  border: 0rem solid #163c6e;
-  border-left-width: 2.5rem; }
+  padding-left: 0rem; }
 
 .cat-content {
   padding: 1.5rem;

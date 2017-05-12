@@ -1,9 +1,5 @@
 #header {
 	color: $accent-dark;
-	/*
-	border: 0px solid $accent;
-	border-bottom-width: 3px;
-	*/
 	padding-bottom: 1rem;
 }
 
@@ -12,13 +8,13 @@
 }
 
 #contact-info {
-	color: white;
+	color: black;
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	padding: 0.5rem;
-	background-color: $accent-dark;
+	background-color: $accent-light;
 	& a {
 		margin-right: 1rem;
 		cursor: pointer;
