@@ -24,8 +24,7 @@
 	padding-left: 0.5rem;
 	background-color: $accent-light;
 	cursor: pointer;
-	border: 0px solid white;
-	border-bottom-width: 1px;
+	border: 1px solid white;
 	&:hover {
 		background-color: yellow;
 		border-color: black;
