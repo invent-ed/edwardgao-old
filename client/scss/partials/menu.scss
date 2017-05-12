@@ -4,7 +4,7 @@
 	width: 10rem;
 	height: 10.5rem;
 	top: 17.5rem;
-	right: 4rem;
+	left: calc(100% - 14rem);
 	@include respond-to(print) {
 		display: none;
 	}
