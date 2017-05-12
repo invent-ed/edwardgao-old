@@ -28,6 +28,7 @@ body {
   background-color: #eeeeee; }
   @media only print {
     body {
+      padding: 4rem;
       background-color: white; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     body {
@@ -153,7 +154,9 @@ a {
     font-size: 0.6rem; }
   @media only print {
     .cat-content {
-      padding: 0rem; } }
+      padding: 0rem; }
+      .cat-content a {
+        font-size: 0.8rem; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 965px) {
     .cat-content {
       padding: 1rem; }

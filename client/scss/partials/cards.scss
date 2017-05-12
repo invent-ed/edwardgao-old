@@ -11,8 +11,11 @@
 		color: blue;
 		font-size: 0.6rem;
 	}
-	@media only print {
+	@include respond-to(print) {
 		padding: 0rem;
+		a {
+			font-size: 0.8rem;
+		}
 	}
 	@include respond-to(small) {
 		padding: 1rem;

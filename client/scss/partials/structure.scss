@@ -12,7 +12,7 @@
 html {
 	font-size: 20px;
 	font-family: 'Open Sans', Verdana, sans-serif;
-	@media only print {
+	@include respond-to(print) {
 		font-size: 20px;
 	}
 	@include respond-to(small) {
@@ -26,7 +26,8 @@ body {
 	padding-bottom: 2rem;
 	position: relative;
 	background-color: $bkgd;
-	@media only print {
+	@include respond-to(print) {
+		padding: 4rem;
 		background-color: white;
 	}
 	@include respond-to(small) {

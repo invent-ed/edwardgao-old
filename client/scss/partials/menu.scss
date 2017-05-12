@@ -5,7 +5,7 @@
 	height: 10.5rem;
 	top: 17.5rem;
 	right: 4rem;
-	@media only print {
+	@include respond-to(print) {
 		display: none;
 	}
 	@include respond-to(small) {

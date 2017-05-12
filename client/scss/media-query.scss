@@ -3,6 +3,9 @@
 		@media only screen and (max-device-width: 460px),
 			only screen and (min-device-width: 1024px) and (max-width: 965px) { @content; }
 	}
+	@else if $media == print {
+		@media only print { @content; }
+	}
 	@else if $media == large {
 		@media only screen and (min-device-width: 1024px) and (min-width: 965px) { @content; }
 	}
