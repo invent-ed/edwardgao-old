@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: User,
+          model: 'Users',
           key: 'id'
         }
       },
@@ -20,7 +20,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: User,
+          model: 'Users',
           key: 'id'
         }
       },
@@ -45,12 +45,12 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        defaultValue: new Date(),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         type: Sequelize.DATE
       },
       updatedAt: {
         allowNull: false,
-        defaultValue: new Date(),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         type: Sequelize.DATE
       }
     });

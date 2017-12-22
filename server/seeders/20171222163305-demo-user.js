@@ -7,19 +7,13 @@ module.exports = {
       lastName: 'Smith',
       email: 'alice.smith@example.com',
       username: 'alicesmith',
-      password: 'password',
-      deleted: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
+      password: 'password'
     }, {
       firstName: 'Bob',
       lastName: 'Smith',
       email: 'bob.smith@example.com',
       username: 'bobsmith',
-      password: 'password',
-      deleted: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
+      password: 'password'
     }]);
   },
 

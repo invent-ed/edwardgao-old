@@ -44,16 +44,17 @@ module.exports = {
       },
       deleted: {
         type: Sequelize.BOOLEAN,
+        defaultValue: false,
         allowNull: false
       },
       createdAt: {
         allowNull: false,
-        defaultValue: new Date(),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         type: Sequelize.DATE
       },
       updatedAt: {
         allowNull: false,
-        defaultValue: new Date(),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         type: Sequelize.DATE
       }
     });

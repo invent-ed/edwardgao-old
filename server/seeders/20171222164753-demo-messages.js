@@ -18,11 +18,6 @@ module.exports = {
       from_user_id: 1,
       to_user_id: 2,
       payload: JSON.stringify(payload1),
-      delivered: false,
-      read: null,
-      deleted: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
     }, {
       from_user_id: 2,
       to_user_id: 1,
