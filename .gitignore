@@ -1,4 +1,5 @@
 server/node_modules
+server/config/config.json
 resume/node_modules
 resume/public/css/app.css
 portfolio/node_modules

@@ -1,0 +1,30 @@
+/* This is an example file
+ * change username and password accordingly
+ * change file name to "config.json"
+ * delete this comment */
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "edwardgao",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "edwardgao",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "edwardgao",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  }
+}
