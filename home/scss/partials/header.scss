@@ -1,0 +1,27 @@
+#header {
+	background-color: #02779e;
+	padding-top: 4rem;
+	padding-left: 2rem;
+	padding-bottom: 1rem;
+	width: 100%;
+	@include respond-to(print) {
+		padding-top: 2rem;
+		padding-bottom: 0rem;
+		background-color: white;
+	}
+	@include respond-to(small) {
+		padding-top: 1rem;
+		padding-left: 1rem;
+	}
+	@include respond-to(medium) {
+		padding-top: 4rem;
+	}
+}
+
+#title {
+	color: white;
+	font-size: 3rem;
+	@include respond-to(print) {
+		color: black;
+	}
+}

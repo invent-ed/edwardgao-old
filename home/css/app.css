@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+*:not(ul, li) {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  user-select: none;
+  box-sizing: border-box; }
+
+html {
+  overflow-x: hidden;
+  font-size: 25px;
+  font-family: 'Open Sans', Verdana, sans-serif; }
+  @media only print {
+    html {
+      font-size: 20px; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    html {
+      font-size: 15px; } }
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+    html {
+      font-size: 20px; } }
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: #eeeeee; }
+  @media only print {
+    body {
+      background-color: white; } }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+
+@media only print {
+  .card-title, a, li, p {
+    page-break-inside: avoid; } }
+
+#header {
+  background-color: #02779e;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  width: 100%; }
+  @media only print {
+    #header {
+      padding-top: 2rem;
+      padding-bottom: 0rem;
+      background-color: white; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    #header {
+      padding-top: 1rem;
+      padding-left: 1rem; } }
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+    #header {
+      padding-top: 4rem; } }
+
+#title {
+  color: white;
+  font-size: 3rem; }
+  @media only print {
+    #title {
+      color: black; } }
