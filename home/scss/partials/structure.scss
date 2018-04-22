@@ -27,7 +27,7 @@ html {
 body {
 	margin: 0;
 	position: relative;
-	background-color: $accent;
+	background-color: $white;
 	@include respond-to(print) {
 		background-color: white;
 	}
