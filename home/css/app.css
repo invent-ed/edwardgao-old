@@ -191,6 +191,8 @@ div#menu-spacing.smaller {
   border: 0px solid gray;
   border-bottom-width: 2px;
   box-sizing: border-box; }
+  .card span {
+    font-size: 0.8rem; }
 
 #projects {
   display: none; }
@@ -202,6 +204,10 @@ img {
   max-width: 100%;
   object-fit: contain;
   border: 2px solid black; }
+
+.link {
+  color: blue;
+  text-decoration: underline; }
 
 .videoWrapper {
   position: relative;
