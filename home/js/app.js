@@ -10,6 +10,7 @@
     // Device / platform detection
     let isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1; 
     let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    let iPad = navigator.userAgent.match(/iPad/i) != null;
 
     // set headerSpace height
     (function followHeight() {
@@ -29,7 +30,12 @@
     // fix quirks in iOS
     (function iOSFix() {
         if(iOS) {
-            header.style.paddingBottom = "0rem";
+            header.style.paddingBottom = "1rem";
+        }
+        if(iPad) {
+            header.style.paddingBottom = "0.5rem";
+            headerMenu.style.paddingTop = "1rem";
+            headerMenu.style.marginLeft = "2rem";
         }
     })();
 
@@ -43,7 +49,7 @@
             if(!isChrome) {
                 header.style.height = "3rem";
             }
-        } else {
+        } else if (distanceY == 0 && matchMedia) {
             largeHeader();
             if(!isChrome) {
                 header.style.height = "9rem";
