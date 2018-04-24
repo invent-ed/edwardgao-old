@@ -83,6 +83,20 @@
     const about = document.getElementById('about');
     const projects = document.getElementById('projects');
     const contact = document.getElementById('contact');
+    let hash = window.location.hash;
+
+    // load appropriate panel
+    switch(hash) {
+        case "#projects":
+            showProjects();
+            break;
+        case "#contact":
+            showContact();
+            break;
+        default:
+            window.location.hash = "#about";
+            showAbout();
+    }
 
     // Display links
     function showAbout() {
@@ -92,6 +106,7 @@
         aboutLink.style.textDecoration = "underline";
         projectsLink.style.textDecoration = "none";
         contactLink.style.textDecoration = "none";
+        window.location.hash = "#about";
     }
     function showProjects() {
         about.style.display = "none";
@@ -100,6 +115,7 @@
         aboutLink.style.textDecoration = "none";
         projectsLink.style.textDecoration = "underline";
         contactLink.style.textDecoration = "none";
+        window.location.hash = "#projects";
     }
     function showContact() {
         about.style.display = "none";
@@ -108,6 +124,7 @@
         aboutLink.style.textDecoration = "none";
         projectsLink.style.textDecoration = "none";
         contactLink.style.textDecoration = "underline";
+        window.location.hash = "#contact";
     }
 
     // Add event listeners
