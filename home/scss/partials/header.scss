@@ -103,13 +103,17 @@ div#menu-spacing.smaller {
 
 .menu-item {
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
     @include respond-to(medium) {
         flex-grow: 1;
     }
     @include respond-to(small) {
         flex-grow: 1;
+    }
+    a {
+        width: 100%;
+        height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 

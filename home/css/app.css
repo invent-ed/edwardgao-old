@@ -141,15 +141,18 @@ div#menu-spacing.smaller {
       justify-content: flex-start; } }
 
 .menu-item {
-  text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  text-align: center; }
   @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
     .menu-item {
       flex-grow: 1; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     .menu-item {
       flex-grow: 1; } }
+  .menu-item a {
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
 
 .menu-item:hover {
   text-decoration: underline; }
