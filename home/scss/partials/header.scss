@@ -3,9 +3,12 @@
 	width: 100%;
 	padding-top: 4rem;
 	padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    transition: padding-top 0.5s, height 0.5s;
 	@include respond-to(print) {
 		padding-top: 2rem;
 		padding-bottom: 0rem;
@@ -13,10 +16,17 @@
 	}
 	@include respond-to(small) {
 		padding-top: 1rem;
+        position: relative;
 	}
 	@include respond-to(medium) {
-		padding-top: 4rem;
+		padding-top: 2rem;
+        position: relative;
 	}
+}
+
+div#header.smaller {
+    padding-top: 0.1rem;
+    height: $small-header-height;
 }
 
 #header-title {
@@ -24,6 +34,7 @@
 	font-size: 3rem;
     height: 4rem;
     margin-left: 2rem;
+    transition: font-size 0.5s, width 0.5s;
 	@include respond-to(print) {
 		color: black;
 	}
@@ -37,12 +48,17 @@
     }
 }
 
+div#header-title.smaller {
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
 #header-menu {
-    height: 4rem;
     display: flex;
     flex-flow: column wrap;
     flex-grow: 1;
     margin-right: 2rem;
+    transition: width 0.5s;
     @include respond-to(medium) {
         width: 50%;
     }
@@ -54,8 +70,17 @@
     }
 }
 
+div#header-menu.smaller {
+    padding-top: 0.8rem;
+}
+
 #menu-spacing {
     flex-grow: 1;
+}
+
+div#menu-spacing.smaller {
+    flex-grow: 0;
+    background-color: blue;
 }
 
 #menu-container {
@@ -78,4 +103,10 @@
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    @include respond-to(medium) {
+        flex-grow: 1;
+    }
+    @include respond-to(small) {
+        flex-grow: 1;
+    }
 }

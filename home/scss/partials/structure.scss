@@ -10,9 +10,11 @@
 }
 
 html {
+    height: 100%;
 	overflow-x: hidden;
 	font-size: 25px;
 	font-family: 'Open Sans', Verdana, sans-serif;
+    transition: font-size 0.5s;
 	@include respond-to(print) {
 		font-size: 20px;
 	}
@@ -26,6 +28,7 @@ html {
 
 body {
 	margin: 0;
+    height: 100%;
 	position: relative;
 	background-color: $white;
 	@include respond-to(print) {
