@@ -13,7 +13,6 @@
 html {
   height: 100%;
   overflow-x: hidden;
-  font-size: 25px;
   font-family: 'Open Sans', Verdana, sans-serif;
   transition: font-size 0.5s; }
   @media only print {
@@ -25,6 +24,9 @@ html {
   @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
     html {
       font-size: 20px; } }
+  @media only screen and (min-device-width: 1024px) and (min-width: 1130px) {
+    html {
+      font-size: 25px; } }
 
 body {
   margin: 0;
@@ -78,7 +80,7 @@ div#header.smaller {
   font-size: 3rem;
   height: 4rem;
   margin-left: 2rem;
-  transition: font-size 0.5s, width 0.5s; }
+  transition: width 0.5s; }
   @media only print {
     #header-title {
       color: black; } }
@@ -146,6 +148,22 @@ div#menu-spacing.smaller {
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     .menu-item {
       flex-grow: 1; } }
+
+@media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+  #header-space {
+    display: none; } }
+
+@media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+  #header-space {
+    display: none; } }
+
+@media only screen and (min-device-width: 1024px) and (min-width: 1130px) {
+  #header-space {
+    display: block; } }
+
+@media only print {
+  #header-space {
+    display: block; } }
 
 #content {
   background-color: gray;

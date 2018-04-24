@@ -23,11 +23,6 @@
         } else {
             largeHeader();
         }
-        if(matchMedia) {
-            headerSpace.style.display = 'block';
-        } else {
-            headerSpace.style.display = 'none';
-        }
     }
 
     // header actions

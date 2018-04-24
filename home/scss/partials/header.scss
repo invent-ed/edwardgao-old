@@ -34,7 +34,7 @@ div#header.smaller {
 	font-size: 3rem;
     height: 4rem;
     margin-left: 2rem;
-    transition: font-size 0.5s, width 0.5s;
+    transition: width 0.5s;
 	@include respond-to(print) {
 		color: black;
 	}
@@ -108,5 +108,20 @@ div#menu-spacing.smaller {
     }
     @include respond-to(small) {
         flex-grow: 1;
+    }
+}
+
+#header-space {
+    @include respond-to(small) {
+        display: none;
+    }
+    @include respond-to(medium) {
+        display: none;
+    }
+    @include respond-to(large) {
+        display: block;
+    }
+    @include respond-to(print) {
+        display: block;
     }
 }
