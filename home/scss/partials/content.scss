@@ -1,12 +1,19 @@
 .content {
     background-color: white;
-    height: 100%;
     width: calc(100% - 6rem);
     margin: 0 auto;
     border: 2rem solid white;
+	@include respond-to(medium) {
+        width: calc(100% - 2rem);
+    }
+	@include respond-to(small) {
+        width: calc(100% - 2rem);
+        border: 1rem solid white;
+    }
 }
 
 .card {
+    width: 100%;
     border: 0px solid gray;
     border-bottom-width: 2px;
     box-sizing: border-box;
@@ -18,4 +25,25 @@
 
 #contact {
     display: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    border: 2px solid black;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    width: 100%;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
