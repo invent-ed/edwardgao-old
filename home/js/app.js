@@ -49,12 +49,9 @@
             if(!isChrome) {
                 header.style.height = "3rem";
             }
-        } else if (distanceY == 0 && matchMedia) {
+        } else {
             largeHeader();
-            if(!isChrome) {
-                header.style.height = "9rem";
-            }
-        }
+        } 
     }
 
     // header actions
