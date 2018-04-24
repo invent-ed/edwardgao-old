@@ -9,6 +9,7 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     transition: padding-top 0.5s, height 0.5s;
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.5);
 	@include respond-to(print) {
 		padding-top: 2rem;
 		padding-bottom: 0rem;
@@ -109,6 +110,10 @@ div#menu-spacing.smaller {
     @include respond-to(small) {
         flex-grow: 1;
     }
+}
+
+.menu-item:hover {
+    text-decoration: underline;
 }
 
 #header-space {
