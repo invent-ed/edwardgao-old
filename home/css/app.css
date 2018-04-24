@@ -86,7 +86,7 @@ div#header.smaller {
       color: black; } }
   @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
     #header-title {
-      width: 50%; } }
+      width: 100%; } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     #header-title {
       width: 100%;

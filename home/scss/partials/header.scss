@@ -39,7 +39,7 @@ div#header.smaller {
 		color: black;
 	}
     @include respond-to(medium) {
-        width: 50%;
+        width: 100%;
     }
     @include respond-to(small) {
         width: 100%;
