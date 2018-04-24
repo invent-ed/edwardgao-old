@@ -6,7 +6,10 @@
     const headerMenu = document.getElementById('header-menu');
     const menuSpacing = document.getElementById('menu-spacing');
     const headerSpace = document.getElementById('header-space');
-    const isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1; 
+
+    // Device / platform detection
+    let isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1; 
+    let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 
     // set headerSpace height
     (function followHeight() {
@@ -20,6 +23,13 @@
         const matchMedia = window.matchMedia(largeMedia).matches;
         if(matchMedia && !isChrome) {
             header.style.height = "9rem";
+        }
+    })();
+
+    // fix quirks in iOS
+    (function iOSFix() {
+        if(iOS) {
+            header.style.paddingBottom = "0rem";
         }
     })();
 
