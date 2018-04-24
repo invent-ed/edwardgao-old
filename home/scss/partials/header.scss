@@ -116,6 +116,10 @@ div#menu-spacing.smaller {
     text-decoration: underline;
 }
 
+#about-link {
+    text-decoration: underline;
+}
+
 #header-space {
     @include respond-to(small) {
         display: none;

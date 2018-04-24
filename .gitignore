@@ -1,7 +1,7 @@
 server/node_modules
 server/config/config.json
 resume/node_modules
-resume/public/css/app.css
 portfolio/node_modules
-portfolio/public/css/app.css
 home/node_modules
+.DS_Store
+**/.DS_Store

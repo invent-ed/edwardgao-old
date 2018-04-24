@@ -153,6 +153,9 @@ div#menu-spacing.smaller {
 .menu-item:hover {
   text-decoration: underline; }
 
+#about-link {
+  text-decoration: underline; }
+
 @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
   #header-space {
     display: none; } }
@@ -169,8 +172,20 @@ div#menu-spacing.smaller {
   #header-space {
     display: block; } }
 
-#content {
-  background-color: #E9F2EF;
-  width: calc(100% - 2rem);
-  height: 120%;
-  margin: 0 auto; }
+.content {
+  background-color: white;
+  height: 100%;
+  width: calc(100% - 6rem);
+  margin: 0 auto;
+  border: 2rem solid white; }
+
+.card {
+  border: 0px solid gray;
+  border-bottom-width: 2px;
+  box-sizing: border-box; }
+
+#projects {
+  display: none; }
+
+#contact {
+  display: none; }

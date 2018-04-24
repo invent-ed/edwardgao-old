@@ -1,6 +1,21 @@
-#content {
-    background-color: $white;
-    width: calc(100% - 2rem);
-    height: 120%;
+.content {
+    background-color: white;
+    height: 100%;
+    width: calc(100% - 6rem);
     margin: 0 auto;
+    border: 2rem solid white;
+}
+
+.card {
+    border: 0px solid gray;
+    border-bottom-width: 2px;
+    box-sizing: border-box;
+}
+
+#projects {
+    display: none;
+}
+
+#contact {
+    display: none;
 }

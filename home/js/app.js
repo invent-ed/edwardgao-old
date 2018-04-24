@@ -1,6 +1,6 @@
-(() => {
+(function headerStuff() {
 
-    // DOM elements
+    // Header DOM elements
     const header = document.getElementById('header');
     const headerTitle = document.getElementById('header-title');
     const headerMenu = document.getElementById('header-menu');
@@ -71,5 +71,48 @@
     // scroll and resize actions
     window.addEventListener('scroll', scrollAction);
     window.addEventListener('resize', scrollAction);
+
+})();
+
+(function menuStuff() {
+
+    // Menu DOM elements
+    const aboutLink = document.getElementById('about-link');
+    const projectsLink = document.getElementById('projects-link');
+    const contactLink = document.getElementById('contact-link');
+    const about = document.getElementById('about');
+    const projects = document.getElementById('projects');
+    const contact = document.getElementById('contact');
+
+    // Display links
+    function showAbout() {
+        about.style.display = "block";
+        projects.style.display = "none";
+        contact.style.display = "none";
+        aboutLink.style.textDecoration = "underline";
+        projectsLink.style.textDecoration = "none";
+        contactLink.style.textDecoration = "none";
+    }
+    function showProjects() {
+        about.style.display = "none";
+        projects.style.display = "block";
+        contact.style.display = "none";
+        aboutLink.style.textDecoration = "none";
+        projectsLink.style.textDecoration = "underline";
+        contactLink.style.textDecoration = "none";
+    }
+    function showContact() {
+        about.style.display = "none";
+        projects.style.display = "none";
+        contact.style.display = "block";
+        aboutLink.style.textDecoration = "none";
+        projectsLink.style.textDecoration = "none";
+        contactLink.style.textDecoration = "underline";
+    }
+
+    // Add event listeners
+    aboutLink.addEventListener('click', showAbout);
+    projectsLink.addEventListener('click', showProjects);
+    contactLink.addEventListener('click', showContact);
 
 })();
