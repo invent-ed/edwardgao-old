@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600');
 
 *:not(ul, li) {
 	top: 0; left: 0;
@@ -59,4 +59,9 @@ h2 {
 
 p {
     margin-top: 0.5rem;
+    line-height: 120%;
+}
+
+.bold {
+    font-weight: 600;
 }

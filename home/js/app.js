@@ -53,13 +53,14 @@
             largeHeader();
             header.style.height = "auto";
         } else {
-            header.style.height = "3rem";
+            if(isSafari && !isChrome) {
+                header.style.height = "3rem";
+            }
             smallHeader();
         }
         if(distanceY > 0 && matchMedia) {
             smallHeader();
             if(isSafari && !isChrome) {
-                console.log("SETTING!");
                 header.style.height = "3rem";
             }
         } else {
