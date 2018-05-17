@@ -298,9 +298,17 @@ div#menu-spacing.smaller {
   border: 0px solid gray;
   border-bottom-width: 2px;
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  padding: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+    .card {
+      padding: 0;
+      padding-bottom: 1rem; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    .card {
+      padding: 0;
+      padding-bottom: 1rem; } }
   .card .span {
     font-size: 0.8rem;
     margin-bottom: 0.5rem; }

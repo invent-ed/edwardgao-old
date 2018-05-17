@@ -16,7 +16,15 @@
     border: 0px solid gray;
     border-bottom-width: 2px;
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem;
+    @include respond-to(medium) {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    @include respond-to(small) {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
     box-sizing: border-box;
     .span {
         font-size: 0.8rem;

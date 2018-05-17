@@ -113,7 +113,6 @@
             window.location.hash = "#about";
             showAbout();
     }
-    window.scrollTo(0,0);
 
     // Display links
     function showAbout() {
@@ -133,6 +132,7 @@
         projectsLink.style.textDecoration = "underline";
         contactLink.style.textDecoration = "none";
         window.location.hash = "#projects";
+        setTimeout(window.scrollTo(0,0), 5);
     }
     function showContact() {
         about.style.display = "none";
