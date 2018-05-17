@@ -1,4 +1,48 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+/* CSS Reset */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 *:not(ul, li) {
   top: 0;
   left: 0;
@@ -15,9 +59,10 @@
           box-sizing: border-box; }
 
 html {
+  width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: 'Open Sans', Verdana, sans-serif;
+  font-family: 'Source Sans Pro', Verdana, sans-serif;
   -webkit-transition: font-size 0.5s;
   transition: font-size 0.5s; }
   @media only print {
@@ -36,8 +81,9 @@ html {
 body {
   margin: 0;
   height: 100%;
+  width: 100%;
   position: relative;
-  background-color: #B0C4DE; }
+  background-color: white; }
   @media only print {
     body {
       background-color: white; } }
@@ -51,6 +97,13 @@ a {
   .card-title, a, li, p {
     page-break-inside: avoid; } }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem; }
+
+p {
+  margin-top: 0.5rem; }
+
 #header {
   background-color: #F2CB05;
   width: 100%;
@@ -58,10 +111,10 @@ a {
   padding-bottom: 1rem;
   position: fixed;
   top: 0;
-  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.2rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -86,6 +139,9 @@ a {
     #header {
       padding-top: 2rem;
       position: relative; } }
+  @media only screen and (min-device-width: 1024px) and (min-width: 1130px) {
+    #header {
+      height: 3rem; } }
 
 div#header.smaller {
   padding-top: 0.1rem;
@@ -94,8 +150,8 @@ div#header.smaller {
 #header-title {
   color: black;
   font-size: 3rem;
-  height: 4rem;
   margin-left: 2rem;
+  margin-bottom: 0.5rem;
   -webkit-transition: width 0.5s;
   transition: width 0.5s; }
   @media only print {
@@ -111,6 +167,7 @@ div#header.smaller {
       margin-right: 1rem; } }
 
 div#header-title.smaller {
+  margin-top: 0.5rem;
   font-size: 2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -222,25 +279,27 @@ div#menu-spacing.smaller {
 
 .content {
   background-color: white;
-  width: calc(100% - 6rem);
+  width: 70%;
   margin: 0 auto;
-  border: 2rem solid white; }
+  margin-top: 1rem; }
   @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
     .content {
       width: calc(100% - 2rem); } }
   @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
     .content {
-      width: calc(100% - 2rem);
-      border: 1rem solid white; } }
+      width: calc(100% - 2rem); } }
 
 .card {
   width: 100%;
   border: 0px solid gray;
   border-bottom-width: 2px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  .card span {
-    font-size: 0.8rem; }
+  .card .span {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem; }
 
 #projects {
   display: none; }

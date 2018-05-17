@@ -5,8 +5,8 @@
 	padding-bottom: 1rem;
     position: fixed;
     top: 0;
-    z-index: 10;
     display: flex;
+    font-size: 1.2rem;
     flex-flow: row wrap;
     justify-content: flex-start;
     transition: padding-top 0.5s, height 0.5s;
@@ -24,6 +24,9 @@
 		padding-top: 2rem;
         position: relative;
 	}
+    @include respond-to(large) {
+        height: 3rem;
+    }
 }
 
 div#header.smaller {
@@ -34,8 +37,8 @@ div#header.smaller {
 #header-title {
 	color: black;
 	font-size: 3rem;
-    height: 4rem;
     margin-left: 2rem;
+    margin-bottom: 0.5rem;
     transition: width 0.5s;
 	@include respond-to(print) {
 		color: black;
@@ -51,6 +54,7 @@ div#header.smaller {
 }
 
 div#header-title.smaller {
+    margin-top: 0.5rem;
     font-size: 2rem;
     flex-grow: 1;
 }

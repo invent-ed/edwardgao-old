@@ -9,6 +9,7 @@
 
     // Device / platform detection
     let isChrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1; 
+    let isSafari = navigator.userAgent.toLowerCase().indexOf('safari') > -1; 
     let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
     let iPad = navigator.userAgent.match(/iPad/i) != null;
 
@@ -18,12 +19,16 @@
         setTimeout(followHeight, 5);
     })();
 
-    // fix safari weird header height bug
+    // fix quirks in desktop Safari
     (function safariFix() {
         const largeMedia = '(min-device-width: 1024px) and (min-width: 1130px)';
         const matchMedia = window.matchMedia(largeMedia).matches;
-        if(matchMedia && !isChrome) {
-            header.style.height = "9rem";
+        if(isSafari && !isChrome && matchMedia) {
+            header.classList.add('smaller');
+            headerTitle.classList.add('smaller');
+            headerMenu.classList.add('smaller');
+            menuSpacing.classList.add('smaller');
+            header.style.height = "3rem";
         }
     })();
 
@@ -41,16 +46,26 @@
 
     // Scroll actions
     function scrollAction() {
-        const distanceY = window.pageYOffset;
-        const largeMedia = '(min-device-width: 1024px) and (min-width: 1130px)';
-        const matchMedia = window.matchMedia(largeMedia).matches;
+        let distanceY = window.pageYOffset;
+        let largeMedia = '(min-device-width: 1024px) and (min-width: 1130px)';
+        let matchMedia = window.matchMedia(largeMedia).matches;
+        if(!matchMedia) {
+            largeHeader();
+            header.style.height = "auto";
+        } else {
+            header.style.height = "3rem";
+            smallHeader();
+        }
         if(distanceY > 0 && matchMedia) {
             smallHeader();
-            if(!isChrome) {
+            if(isSafari && !isChrome) {
+                console.log("SETTING!");
                 header.style.height = "3rem";
             }
         } else {
-            largeHeader();
+            if(!isSafari || isChrome) {
+                largeHeader();
+            }
         } 
     }
 
@@ -97,6 +112,7 @@
             window.location.hash = "#about";
             showAbout();
     }
+    window.scrollTo(0,0);
 
     // Display links
     function showAbout() {
@@ -116,7 +132,6 @@
         projectsLink.style.textDecoration = "underline";
         contactLink.style.textDecoration = "none";
         window.location.hash = "#projects";
-        window.scrollTo(0,0);
     }
     function showContact() {
         about.style.display = "none";
