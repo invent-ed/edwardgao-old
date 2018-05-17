@@ -14,7 +14,6 @@ app.use(cookieParser());
 
 // routes
 app.use('/', express.static('../home/public'));
-app.use('/old', express.static('../portfolio/public'))
 app.use('/resume', express.static('../resume/public'));
 
 // start express server

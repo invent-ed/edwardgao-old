@@ -116,6 +116,7 @@
         projectsLink.style.textDecoration = "underline";
         contactLink.style.textDecoration = "none";
         window.location.hash = "#projects";
+        window.scrollTo(0,0);
     }
     function showContact() {
         about.style.display = "none";

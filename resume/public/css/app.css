@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+*:not(ul, li) {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  user-select: none;
+  box-sizing: border-box; }
+
+html {
+  overflow-x: hidden;
+  font-size: 25px;
+  font-family: 'Open Sans', Verdana, sans-serif; }
+  @media only print {
+    html {
+      font-size: 20px; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    html {
+      font-size: 15px; } }
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+    html {
+      font-size: 20px; } }
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: #eeeeee; }
+  @media only print {
+    body {
+      background-color: white; } }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none; }
+
+@media only print {
+  .card-title, a, li, p {
+    page-break-inside: avoid; } }
+
+#header {
+  background-color: #02779e;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  width: 100%; }
+  @media only print {
+    #header {
+      padding-top: 2rem;
+      padding-bottom: 0rem;
+      background-color: white; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    #header {
+      padding-top: 1rem;
+      padding-left: 1rem; } }
+  @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+    #header {
+      padding-top: 4rem; } }
+
+#title {
+  color: white;
+  font-size: 3rem; }
+  @media only print {
+    #title {
+      color: black; } }
+
+#contact-info {
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  background-color: #dddddd; }
+  #contact-info a {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem; }
+    @media only screen and (min-device-width: 461px) and (min-width: 461px) and (max-width: 1129px) {
+      #contact-info a {
+        font-size: 0.8rem !important; } }
+    @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+      #contact-info a {
+        font-size: 1rem;
+        margin-right: 1rem; } }
+  #contact-info a:hover {
+    background-color: yellow; }
+  @media only print {
+    #contact-info {
+      background-color: white; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    #contact-info {
+      padding-left: 1rem;
+      margin-right: 0rem !important;
+      display: block; } }
+
+#menu {
+  margin-top: 0.5rem;
+  position: absolute;
+  width: 10rem;
+  height: 10.5rem;
+  top: 12rem;
+  left: calc(100% - 12rem); }
+  @media only print {
+    #menu {
+      display: none; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    #menu {
+      display: none; } }
+
+.static-menu {
+  position: fixed !important;
+  top: 1rem !important; }
+
+.menu-entry {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid white; }
+  .menu-entry:hover {
+    background-color: yellow;
+    border-color: black; }
+
+#category-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 2rem;
+  padding-top: 0rem; }
+  @media only print {
+    #category-container {
+      margin-top: 0rem; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    #category-container {
+      padding: 1rem;
+      padding-top: 0rem; } }
+
+.category {
+  width: calc(100% - 11rem); }
+  @media only print {
+    .category {
+      width: 100%;
+      margin-bottom: 0rem; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    .category {
+      width: 100%;
+      margin-bottom: 0rem; } }
+
+.cat-title {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  padding-left: 0rem; }
+  @media only print {
+    .cat-title {
+      border: 0px solid black;
+      border-bottom-width: 1px; } }
+
+.cat-content {
+  padding: 1.5rem;
+  background-color: white;
+  margin-top: 1rem; }
+  .cat-content .card-title {
+    margin: 0px;
+    font-size: 1.3rem;
+    line-height: 1.3rem; }
+  .cat-content a {
+    color: #02779e;
+    font-size: 0.6rem; }
+    .cat-content a:hover {
+      background-color: yellow; }
+  @media only print {
+    .cat-content {
+      padding: 0rem; }
+      .cat-content a {
+        font-size: 0.8rem; } }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    .cat-content {
+      padding: 1rem; }
+      .cat-content a {
+        font-size: 0.8rem; } }
+
+p {
+  font-size: 0.8rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    p {
+      margin-top: 0.5rem; } }
+
+ul {
+  margin: 0;
+  font-size: 0.8rem; }
+  @media only screen and (max-device-width: 460px), only screen and (min-device-width: 1024px) and (max-width: 1129px) {
+    ul {
+      padding-left: 1.2rem; } }
